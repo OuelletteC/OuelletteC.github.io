@@ -1,28 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <body>
-Package edu.game.main
-    MainActivity
-- Controls which window is active
-    BlankBoard (GameView)
- - creates and renders a blank board
 
-Package edu.game.chess
-    Chess
-- Controls the chess game
-        - Has ChessBoard object
-        - Has game loop which contain update and render (or whatever they are called)
-        - update and render here will call BlankBoard and ChessBoard update and render
-    ChessBoard
-        - Adds chess pieces to a BlankBoard object (using update method)
-        - renders the pieces in their current locations
-    Abstract class Pieces
-        - Methods isLegal (checks if move is legal), isBlocked (checks if a piece blocks the attempted move), inCheck (checks if our king is in check), isWin (checks if the move wins the game)
-    Pawn extends Pieces
-    Knight extends Pieces
-    Bishop extends Pieces
-    Rook extends Pieces
-    King extends Pieces
-    Queen extends Pieces
 </body>
 </html>
